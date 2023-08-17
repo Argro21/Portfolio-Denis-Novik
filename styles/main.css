@@ -1,0 +1,401 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+/* mulish-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/mulish-v12-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* mulish-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/mulish-v12-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* mulish-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/mulish-v12-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 130%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  line-height: 22px;
+
+}
+
+ .header__item {
+  width: 85px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+} 
+
+.header__item-afirst {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  margin: auto;
+}
+
+.header__item-afirst:hover {
+  color: #ec6f2c;
+  transition: color 0.3s ease;
+}
+
+.header__item-ascnd, .header__item-athr, .header__item-afrt, .header__item-afift {
+  text-decoration: none;
+  font-size: 18px;
+  color: #828282;
+  font-weight: 700;
+  margin: auto;
+
+}
+
+.header__item-ascnd:hover, .header__item-athr:hover, .header__item-afrt:hover, .header__item-afift:hover {
+  color: #200f06;
+  transition: color 0.3s ease;
+}
+
+
+.home {
+    padding-bottom: 100px;
+}
+
+.home__text {
+  max-width: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0px ;
+  border-top: 1px solid;
+  border-color: black;
+}
+
+.menu {
+  display: none;
+}
+
+.home__author-name {
+  width: 16px;
+}
+
+
+.home__language p{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.home__language a {
+  color: black;
+  text-decoration: none;
+}
+
+.home__language a:hover {
+  color: #ec6f2c;
+  transition: color 0.2s ease;
+}
+
+.home__photo {
+  display: flex;
+  justify-content: center;    
+} 
+
+.home__mini {
+  display: none;
+} 
+
+.photo-big {
+    max-width: 100%;
+}
+
+
+.aboutMe {
+  background-color: #F6F6F6;
+
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.aboutMe p {
+  line-height: 130%;
+  margin-bottom: 8px;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+
+}
+
+.apps {
+  margin: auto;
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+  line-height: 130%;
+}
+
+
+.apps img {
+  margin-bottom: 20px;
+
+}
+.apps p {
+  height: 42px;
+  margin-bottom: 30px;
+}
+
+.portfolio {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+
+}
+
+.portfolio a {
+  color: black;
+}
+
+.portfolio a:hover {
+  color: #ec6f2c;
+  transition: color 0.2s ease;
+}
+
+.portfolio h2 {
+margin-bottom: 50px;
+}
+
+.fashion p{
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.fashion__img {
+  max-width: 100%;
+}
+
+.reebok p{
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.reebok__img {
+  max-width: 100%;
+}
+
+.braun p{
+  margin-top: 40px;
+}
+
+.braun__img {
+  max-width: 100%;
+}
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  text-align: center;
+  max-width: 100%;
+}
+
+.footer h2 {
+margin-bottom: 20px;
+}
+
+.footer p {
+margin-bottom: 10px;
+  
+}
+
+.contacts_btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 180px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contacts_btn:hover {
+  background-color: #ec6f2c;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  color: rgb(20, 18, 18);
+   }
+
+.messengers {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 45px;
+  width: 350px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* .message__in:hover, .message__inst:hover, .message__be:hover, .message__dr:hover {
+  box-shadow: 0px 10px 5px #200f06;
+} */
+
+.end-text {
+  font-size: 14px;
+  color: #828282;
+}
+
+@media  (max-width: 1200px) {
+
+  header, .home, .aboutMe, .skills, .portfolio, .footer {
+    padding-right: 50px;
+    padding-left: 50px;
+
+  }
+
+}
+
+@media  (max-width: 720px) {
+  header {
+    display: none;
+  }
+
+  header, .home, .aboutMe, .skills, .portfolio, .footer {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 100%;
+
+  }
+
+  .home__text {
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__language {
+    display: none;
+  }
+  
+  .home__author-name {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 30px;
+  }
+
+  .menu {
+    padding-top: 27px;
+    display: inline;
+    
+  }
+
+  .btn-menu {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    height: 20px;
+
+  }
+
+  .home__photo {
+    display: none;
+  } 
+
+  .home__mini {
+    display: flex;
+    justify-content: center; 
+    max-width: auto;
+  } 
+
+  .home__info {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .photo-mini {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .apps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90;
+  }
+
+  .apps img {
+    margin-top: 30px;
+  }
+
+  .apps p {
+    margin-bottom: 0px;
+
+  }
+
+  .apps__ai, .apps__ae, .apps__figma {
+    margin-top: 10px;
+  }
+
+  /* .stars__img {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  } */
+
+  .apps__figma p {
+    height: auto;
+  }
+
+}
